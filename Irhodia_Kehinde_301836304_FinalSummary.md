@@ -10,7 +10,7 @@ My case study is a fictional university laboratory equipment booking system. It 
 
 I organised the relational design into 5 tables. Primary keys identify records, foreign keys preserve the links, and checks enforce the stated business rules. A partial unique index allows only one approved or checked-out request per unit. Pending and historical requests do not participate in that index. The normalisation examples show the sample data at 1NF, 2NF and 3NF. All 16 deliberately invalid inserts were rejected without changing the valid sample rows.
 
-![MIT 8103 laboratory equipment booking exercise ER diagram](images/Irhodia_Kehinde_301836304_ERDiagram.png)
+<img src="images/Irhodia_Kehinde_301836304_ERDiagram.png" alt="MIT 8103 laboratory equipment booking exercise ER diagram" width="100%" />
 
 Figure 1. Tables, keys and relationships. PK: primary key; FK: foreign key; UK: unique value.
 
@@ -47,16 +47,4 @@ I kept lab_member, equipment, equipment_unit, booking_request and return_record 
 
 ## AI-use declaration
 
-OpenAI Codex and the portfolio generator helped prepare the model, scripts and explanations. The generator ran the PostgreSQL and MongoDB exercises and captured the recorded outputs. The assistant checked the evidence and corrected documentation.
-
-## References
-
-- [PostgreSQL: constraints](https://www.postgresql.org/docs/17/ddl-constraints.html)
-- [PostgreSQL: EXPLAIN](https://www.postgresql.org/docs/17/using-explain.html)
-- [PostgreSQL: isolation](https://www.postgresql.org/docs/17/transaction-iso.html)
-- [PostgreSQL: row locks](https://www.postgresql.org/docs/17/explicit-locking.html)
-- [MongoDB: data modelling](https://www.mongodb.com/docs/manual/data-modeling/)
-- [MongoDB: replication](https://www.mongodb.com/docs/manual/replication/)
-- [MongoDB: sharding](https://www.mongodb.com/docs/manual/sharding/)
-- [Mermaid: ER diagrams](https://mermaid.js.org/syntax/entityRelationshipDiagram.html)
-
+OpenAI Codex generated the case model and execution data through the local portfolio generator. PostgreSQL and MongoDB produced the saved results. Evidence images render those recorded results
